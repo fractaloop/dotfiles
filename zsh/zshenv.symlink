@@ -1,0 +1,3 @@
+# Option+{Left|Right} to skip words
+bindkey "[D" backward-word
+bindkey "[C" forward-word
