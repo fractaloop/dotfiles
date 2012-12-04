@@ -1,0 +1,5 @@
+alias be="bundle exec"
+alias kc="knife cluster"
+alias kcl="knife cluster launch"
+alias kcs="knife cluster show"
+alias kck="knife cluster kill"
