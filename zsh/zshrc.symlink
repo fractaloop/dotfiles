@@ -1,8 +1,8 @@
 # shortcut to this dotfiles path is $DOTFILES
 export DOTFILES=$HOME/.dotfiles
 
-# your project folder that we can `c [tab]` to
-export PROJECTS=~/Code
+# do system files first since we need paths .zsh file in this rep
+for config_file ($DOTFILES/system/*.zsh) [[ "$(basename $config_file)" == "completion.zsh" ]] || source $config_file
 
 # source every .zsh file in this rep
 for config_file ($DOTFILES/**/*.zsh) [[ "$(basename $config_file)" == "completion.zsh" ]] || source $config_file
