@@ -1,6 +1,5 @@
 [
   { "keys": ["super+control+r"], "command": "reveal_in_side_bar"},
-  { "keys": ["control+w"], "command": "find_under_expand" },
   { "keys": ["super+alt+control+p"], "command": "markdown_preview", "args": {"target": "browser"} },
 
   { "keys": ["super+v"], "command": "paste_and_indent" },
