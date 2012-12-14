@@ -6,12 +6,23 @@ set -x
 curl -s 'https://raw.github.com/dmatarazzo/Sublime-Text-2-Icon/master/Sublime%20Text%202.icns' --output '/Applications/Sublime Text 2.app/Contents/Resources/Sublime Text 2.icns'
 
 # symlink settings in
-sublime_dir="$HOME/Library/Application Support/Sublime Text 2/Packages"
-if [ -d "$sublime_dir/User.backup" ]; then
-	rm -rf "$sublime_dir/User.backup"
+SUBLIME_DIR="$HOME/Library/Application Support/Sublime Text 2/Packages"
+SUBLIME_USER_DIR="$SUBLIME_DIR/User"
+SUBLIME_BACKUP_DIR="$SUBLIME_DIR/User.backup"
+
+if [ -L "$SUBLIME_USER_DIR" ]; then
+  # Relink
+  rm "$SUBLIME_USER_DIR"
+  ln -s "$DOTFILES/sublime2/User" "$SUBLIME_USER_DIR"
+else
+  if [ -d "$SUBLIME_BACKUP_DIR" ]; then
+    # Erase the User dir if we already have a backup
+    rm -rf "$SUBLIME_USER_DIR"
+  else
+    # Backup the folder
+    mv "$SUBLIME_USER_DIR" "$SUBLIME_BACKUP_DIR"
+  fi
 fi
-mv "$sublime_dir/User" "$sublime_dir/User.backup"
-ln -s "$DOTFILES/sublime2/User" "$sublime_dir"
 
 # Add Automator service
 cp -r "$DOTFILES/sublime2/Open in Sublime.workflow" "$HOME/Library/Services"
