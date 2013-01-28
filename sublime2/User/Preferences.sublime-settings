@@ -1,74 +1,32 @@
 {
-  "color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
-
-  // Note that the font_face and font_size are overriden in the platform
-  // specific settings file, for example, "Preferences (Linux).sublime-settings".
-  // Because of this, setting them here will have no effect: you must set them
-  // in your User File Preferences.
-  "font_face": "Source Code Pro",
-  "font_size": 12,
-
-  // Valid options are "no_bold", "no_italic", "no_antialias", "gray_antialias",
-  // "subpixel_antialias", "no_round" (OS X only) and "directwrite" (Windows only)
-  "font_options": ["subpixel_antialias", "no_round"],
-
-  // Spacing between the gutter and the text
-  "margin": 0,
-
-  // Columns in which to display vertical rulers
-  "rulers": [80],
-
-  // The number of spaces a tab is considered equal to
-  "tab_size": 2,
-
-  // Set to true to insert spaces when tab is pressed
-  "translate_tabs_to_spaces": true,
-
-  // If enabled, will highlight any line with a caret
-  "highlight_line": true,
-
-  // Valid values are "smooth", "phase", "blink", "wide" and "solid".
-  "caret_style": "smooth",
-
-  // Set to "none" to turn off drawing white space, "selection" to draw only the
-  // white space within the selection, and "all" to draw all white space
-  "draw_white_space": "all",
-
-  // Set to false to turn off the indentation guides.
-  // The color and width of the indent guides may be customized by editing
-  // the corresponding .tmTheme file, and specifying the colors "guide",
-  // "activeGuide" and "stackGuide"
-  "draw_indent_guides": true,
-
-  // Controls how the indent guides are drawn, valid options are
-  // "draw_normal" and "draw_active". draw_active will draw the indent
-  // guides containing the caret in a different color.
-  "indent_guide_options": ["draw_normal", "draw_active"],
-
-  // Set to true to removing trailing white space on save
-  "trim_trailing_white_space_on_save": true,
-
-  // Set to true to ensure the last line of the file ends in a newline
-  // character when saving
-  "ensure_newline_at_eof_on_save": true,
-
-  // By default, auto complete will commit the current completion on enter.
-  // This setting can be used to make it complete on tab instead.
-  // Completing on tab is generally a superior option, as it removes
-  // ambiguity between committing the completion and inserting a newline.
-  "auto_complete_commit_on_tab": true,
-
-  // By default, shift+tab will only unindent if the selection spans
-  // multiple lines. When pressing shift+tab at other times, it'll insert a
-  // tab character - this allows tabs to be inserted when tab_completion is
-  // enabled. Set this to true to make shift+tab always unindent, instead of
-  // inserting tabs.
-  "shift_tab_unindent": true,
-
-  // Show folders in the side bar in bold
-  "bold_folder_labels": true,
-
-  // OS X 10.7 only: Set to true to disable Lion style full screen support.
-  // Sublime Text must be restarted for this to take effect.
-  "use_simple_full_screen": true
+	"auto_complete_commit_on_tab": true,
+	"bold_folder_labels": true,
+	"caret_style": "smooth",
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+	"draw_indent_guides": true,
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Source Code Pro",
+	"font_options":
+	[
+		"subpixel_antialias",
+		"no_round"
+	],
+	"font_size": 13.0,
+	"highlight_line": true,
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"margin": 0,
+	"rulers":
+	[
+		80
+	],
+	"shift_tab_unindent": true,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_simple_full_screen": true
 }
