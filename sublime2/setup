@@ -22,6 +22,7 @@ else
     # Backup the folder
     mv "$SUBLIME_USER_DIR" "$SUBLIME_BACKUP_DIR"
   fi
+  ln -s "$DOTFILES/sublime2/User" "$SUBLIME_USER_DIR"
 fi
 
 # Add Automator service
