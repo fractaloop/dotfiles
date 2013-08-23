@@ -5,7 +5,6 @@
 	email = fractaloop@gmail.com
 [core]
 	excludesfile = ~/.gitignore
-	editor = subl -n
 [merge]
 	tool = opendiff
 	defaultToUpstream = true

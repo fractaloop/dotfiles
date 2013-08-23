@@ -1,19 +1,19 @@
 #!/bin/sh
-# Setup a machine for Sublime Text 2
+# Setup a machine for Sublime Text 3
 set -x
 
 # Replace Icon
 curl -s 'https://raw.github.com/dmatarazzo/Sublime-Text-2-Icon/master/Sublime%20Text%202.icns' --output '/Applications/Sublime Text 2.app/Contents/Resources/Sublime Text 2.icns'
 
 # symlink settings in
-SUBLIME_DIR="$HOME/Library/Application Support/Sublime Text 2/Packages"
+SUBLIME_DIR="$HOME/Library/Application Support/Sublime Text 3/Packages"
 SUBLIME_USER_DIR="$SUBLIME_DIR/User"
 SUBLIME_BACKUP_DIR="$SUBLIME_DIR/User.backup"
 
 if [ -L "$SUBLIME_USER_DIR" ]; then
   # Relink
   rm "$SUBLIME_USER_DIR"
-  ln -s "$DOTFILES/sublime2/User" "$SUBLIME_USER_DIR"
+  ln -s "$DOTFILES/sublime3/User" "$SUBLIME_USER_DIR"
 else
   if [ -d "$SUBLIME_BACKUP_DIR" ]; then
     # Erase the User dir if we already have a backup
@@ -22,8 +22,8 @@ else
     # Backup the folder
     mv "$SUBLIME_USER_DIR" "$SUBLIME_BACKUP_DIR"
   fi
-  ln -s "$DOTFILES/sublime2/User" "$SUBLIME_USER_DIR"
+  ln -s "$DOTFILES/sublime3/User" "$SUBLIME_USER_DIR"
 fi
 
 # Add Automator service
-cp -r "$DOTFILES/sublime2/Open in Sublime.workflow" "$HOME/Library/Services"
+cp -r "$DOTFILES/sublime3/Open in Sublime.workflow" "$HOME/Library/Services"

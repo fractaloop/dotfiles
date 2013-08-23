@@ -1,0 +1,15 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"GitGutter",
+		"Markdown Preview",
+		"Package Control",
+		"sublime-gradle",
+		"SublimeREPL"
+	],
+	"repositories":
+	[
+		"https://github.com/koizuss/sublime-gradle"
+	]
+}
