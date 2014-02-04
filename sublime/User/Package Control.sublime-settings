@@ -3,10 +3,13 @@
 	"installed_packages":
 	[
 		"GitGutter",
+		"JSONLint",
 		"Markdown Preview",
 		"Package Control",
+		"Pretty JSON",
 		"sublime-gradle",
-		"SublimeREPL"
+		"SublimeREPL",
+		"VCS Gutter"
 	],
 	"repositories":
 	[

@@ -16,8 +16,8 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage",
-		"SublimeREPL"
+		"SublimeREPL",
+		"Vintage"
 	],
 	"indent_guide_options":
 	[
