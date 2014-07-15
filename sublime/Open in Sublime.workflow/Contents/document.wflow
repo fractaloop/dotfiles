@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>/Applications/Sublime\ Text\ 3.app/Contents/SharedSupport/bin/subl -n $@</string>
+					<string>/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -nw $@</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
