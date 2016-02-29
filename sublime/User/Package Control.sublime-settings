@@ -1,12 +1,22 @@
 {
 	"auto_upgrade_last_run": null,
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"GitGutter",
+		"Jade",
 		"JSONLint",
 		"Markdown Preview",
 		"Package Control",
 		"Pretty JSON",
+		"RSpec",
+		"Ruby Slim",
+		"RubyTest",
+		"Sass",
+		"SSH Config",
 		"sublime-gradle",
 		"SublimeREPL",
 		"VCS Gutter"
