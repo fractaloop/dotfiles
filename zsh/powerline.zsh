@@ -1,3 +1,6 @@
+POWERLINE_NO_BLANK_LINE="true"
+POWERLINE_DETECT_SSH="true"
+
 # FreeAgent puts the powerline style in zsh !
 
 if [ "$POWERLINE_DATE_FORMAT" = "" ]; then

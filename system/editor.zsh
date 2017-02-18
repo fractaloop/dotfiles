@@ -1,6 +1,6 @@
 if [ -d "/Applications/Atom.app" ]; then
-  export EDITOR='atom'
-  export GIT_EDITOR='atom'
+  export EDITOR='subl -nw'
+  export GIT_EDITOR='subl -nw'
 else
   export EDITOR='nano'
 fi
