@@ -1,2 +1,6 @@
 User/**/*.cache
 User/**/*.last-run
+User/**/*.merged-ca-bundle
+User/**/*.system-ca-bundle
+User/**/*.user-ca-bundle
+User/*.crt
