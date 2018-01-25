@@ -25,3 +25,6 @@
 	ui = true
 [push]
 	default = simple
+[filter "ignore-gitconfig-email"]
+	clean = sed 's/\temail = [^[:space:]]*/\temail = fractaloop@gmail.com/'
+	smudge = cat
